@@ -1,0 +1,8 @@
+﻿(function () {
+    window.prestamo = {
+        obtenerDllPrestamo: function () {
+            let texto = $('#ddlBancosPrestamo option:selected').text();
+            return texto;
+        }
+    };
+})();

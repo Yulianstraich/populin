@@ -1,0 +1,5 @@
+﻿window.registerUnloadHandler = function (dotnetObject) {
+    window.addEventListener('beforeunload', function () {
+        dotnetObject.invokeMethodAsync('OnBeforeUnload');
+    });
+};

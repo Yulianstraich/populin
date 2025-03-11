@@ -1,0 +1,38 @@
+﻿body {
+    font-family: 'Catamaran', sans-serif;
+	font-size: 100%;
+	background: url(banner.png) no-repeat 0px 0px;
+	width: 100%;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-attachment: fixed;
+}
+
+body.danger {    
+    font-family: 'Catamaran', sans-serif;
+	font-size: 100%;
+	background: url(../bannerCorporativo.png) no-repeat 0px 0px;
+	width: 100%;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-attachment: fixed;
+}
+
+body.clear {    
+    font-family: 'Catamaran', sans-serif;
+	font-size: 100%;
+	background: url(banner.png) no-repeat 0px 0px;
+	width: 100%;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-attachment: fixed;
+}

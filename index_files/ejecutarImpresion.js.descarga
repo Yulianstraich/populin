@@ -1,0 +1,237 @@
+﻿(function () {
+    window.imprimir = {
+
+        recibo: function imprim1(mdReciboPropias) {
+            var printContents = document.getElementById('mdReciboPropiasPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirTerceros = {
+
+        recibo: function imprim2(mdReciboTerceros) {
+            var printContents = document.getElementById('mdReciboTercerosPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirAchTrx = {
+
+        recibo: function imprim3(mdReciboAchTrx) {
+            var printContents = document.getElementById('mdReciboAchTrxPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirAchPrestamo = {
+
+        recibo: function imprim4(mdReciboAchPrestamo) {
+            var printContents = document.getElementById('mdReciboAchPrestamoPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirPrestamoPropio = {
+
+        recibo: function imprim5(mdReciboPrestamoPropio) {
+            var printContents = document.getElementById('mdReciboPrestamoPropioPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirPrestamoPropioPersonal = {
+
+        recibo: function imprim6(mdReciboPrestamoPropioPersonal) {
+            var printContents = document.getElementById('mdReciboPrestamoPropioPersonalPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirPrestamoTercero = {
+
+        recibo: function imprim7(mdReciboPrestamoTercero) {
+            var printContents = document.getElementById('mdReciboPrestamoTerceroPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirTc = {
+
+        recibo: function imprim8(mdReciboTcAchTrx) {
+            var printContents = document.getElementById('mdReciboTcAchTrxPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirClaroSuperpacks = {
+
+        recibo: function imprim9(mdReciboSuperPacks) {
+            var printContents = document.getElementById('mdReciboSuperPacksPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirClaroRecargas = {
+
+        recibo: function imprim10(mdReciboRecargas) {
+            var printContents = document.getElementById('mdReciboRecargasPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirPostPagoClaro = {
+
+        recibo: function imprim11(mdReciboPostPagoClaro) {
+            var printContents = document.getElementById('mdReciboPostPagoClaroPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirClaroTv = {
+
+        recibo: function imprim12(mdReciboClaroTv) {
+            var printContents = document.getElementById('mdReciboClaroTvPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirAguaSPS = {
+
+        recibo: function imprim13(mdReciboAguaSPS) {
+            var printContents = document.getElementById('mdReciboAguaSPSPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirSANAA = {
+
+        recibo: function imprim14(mdReciboSANAA) {
+            var printContents = document.getElementById('mdReciboSANAAPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirEEH = {
+
+        recibo: function imprim15(mdReciboEEH) {
+            var printContents = document.getElementById('mdReciboEEHPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirRemesaWU = {
+
+        recibo: function imprim16(mdReciboRemesaWU) {
+            var printContents = document.getElementById('mdReciboRemesaWUPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirRecargasTigo = {
+
+        recibo: function imprim17(mdReciboRecargasTigo) {
+            var printContents = document.getElementById('mdReciboRecargasTigoPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+    window.imprimirPostPagoTigo = {
+
+        recibo: function imprim18(mdReciboPostPagoTigo) {
+            var printContents = document.getElementById('mdReciboPostPagoTigoPrint').innerHTML;
+            w = window.open();
+            w.document.write(printContents);
+            w.document.close(); // necessary for IE >= 10
+            w.focus(); // necessary for IE >= 10
+            w.print();
+            w.close();
+            return true;
+        }
+    };
+
+})();

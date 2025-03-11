@@ -1,0 +1,27 @@
+﻿var timer;
+var downloadTimer;
+var timeleft;
+function TiempoInactivo(donetHelper) {    
+    document.onmousemove = resetTimer;
+    document.onkeypress = resetTimer;
+    function resetTimer() {
+        clearTimeout(timer);
+        timeleft = 60;
+        clearInterval(downloadTimer);
+        timer = setTimeout(logout, 300000);
+    }
+    function logout() {
+        downloadTimer = setInterval(seconds, 1000);
+        donetHelper.invokeMethodAsync("Logout");
+    }
+    function seconds() {
+        if (timeleft === 0) return;
+        timeleft--;
+        document.getElementById('idTiempo').value = timeleft + ' segundos';
+    }
+}
+
+function DetenerTiempoInactivo() {
+    clearInterval(downloadTimer);
+    timeleft === 60;
+}

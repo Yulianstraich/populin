@@ -1,0 +1,379 @@
+﻿/*
+    OMCN Inicio
+*/
+
+.password-input {
+    -webkit-text-security: circle,
+
+}
+
+.rz-datepicker .rz-inputtext {
+    border-style: none !important;
+    box-shadow:none !important;
+}
+
+.rz-timeline-point-secondary {
+    color: #FF8C1C !important;
+    background-color: #FF8C1C !important;
+}
+
+.floating-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    opacity: 0.4;
+}
+
+     .rz-button-lg {
+        width:50px !important;
+        height:50px !important;
+    }
+
+.floating-button:hover{
+    min-height:50vh;
+    min-width:30vw;
+    justify-content:end;
+    align-items:end;
+    opacity:1;
+}
+
+
+.option-buttons{
+    display:none;
+}
+
+.floating-button:hover .option-buttons {
+    display: block;
+}
+
+
+hr {
+    color: #000;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.btn-lt{
+    position: absolute;
+    left: 40px;
+    top: 20px;
+}
+
+#idFlag2 {
+    display: none !important;
+}
+
+.bp-primary {
+    background-color: #FF8C1C;
+    color: whitesmoke;
+}
+
+    .bp-primary:hover {
+        background-color: #ff8e1cac;
+        color: whitesmoke;
+    }
+
+    .bp-primary:active {
+        background-color: #FF8C1C !important;
+        color: #1F4D8F !important;
+        border-color: #FF8C1C !important;
+    }
+
+.btn-link2 {
+    color: #1F4D8F;
+    margin-top: 10px;
+}
+
+    .btn-link2:hover {
+        color: #1f4e8f9a;
+    }
+
+.flat-panel {
+    box-shadow: none !important;
+    border-style: none !important;
+    max-height: 100%;
+    overflow-y: hidden;
+    margin: 0px !important;
+    padding:0px !important;
+}
+
+.alt-title {
+    text-transform: uppercase;
+    font-size: small;
+    color: rgb(119, 119, 119);
+}
+
+.tr-subtitle {
+    font-weight: 600 !important;
+}
+
+.tr-subtitle2 {
+    font-weight: 600 !important;
+    font-size: 20px;
+}
+
+.tr-subtitle3 {
+    font-weight: 600 !important;
+    color: #636363
+}
+
+.card-cuota {
+    background-color: white;
+    cursor: pointer;
+    border-bottom-style: solid;
+    border-bottom-color: lightgray;
+    border-bottom-width:0.5px;
+}
+
+    .card-cuota .card-footer {
+        background-color: #E5E9EC;
+    }
+
+.card-form-container {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 15px;
+    padding: 25px;
+    border-color: #FF8C1C;
+    margin:15px;
+    position:relative;
+}
+
+.float-item{
+    position: absolute !important;
+    top:15px;
+    right:15px;
+}
+
+.card-prestamo {
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-style: none;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    margin-top: 7px;
+    position: relative;
+}
+
+.card-prestamo-fixed {
+    position: -webkit-sticky; /* Para navegadores WebKit */
+    position: sticky;
+    top:5px;
+    z-index:8;
+}
+
+    .card-prestamo .subtitle {
+        font-size: small;
+        color: rgb(119, 119, 119);
+        margin-top: 15px;
+        margin-bottom:15px;
+    }
+
+    .card-prestamo .exportar {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        opacity: 0.6
+    }
+
+        .card-prestamo .exportar:hover {
+            opacity: 1
+        }
+
+    .subtitle2 {
+        font-size: medium;
+        color: rgb(119, 119, 119);
+    }
+
+    .card-prestamo .subtitle3 {
+        font-size: medium;
+        color: rgb(119, 119, 119);
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+
+
+    .card-prestamo .monto-title {
+        font-size: 28px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .card-prestamo .btn{
+        width:100%;
+    }
+/*
+    Fin
+*/
+
+div.validation-message {
+    color: darkred !important;
+}
+
+.rojo {
+    background-color: #f75b36 !important;
+}
+
+.naranja {
+    background-color: #ff8c1c !important;
+}
+
+.verde-button {
+    background-color: #22bb33 !important;
+    opacity: 1 !important;
+    color: white;
+}
+
+.azul {
+    background-color: #1f4d8f !important;
+    color: white !important;
+}
+
+.iconosBP {
+    color: #ff8c1c !important;
+    background-color: #fff !important;
+    font-size: 15px !important;
+}
+
+.iconosBPL {
+    color: #fff !important;
+    background-color: #ff8c1c !important;
+    font-size: 20px !important;
+}
+
+.iconBP {
+    color: #ff8c1c !important;
+    background-color: #fff !important;
+    font-size: 30px !important;
+    max-width: 100px!important;
+    min-width: 50px !important;
+}
+
+.naranja-button {
+    /*background: rgb(31,77,143);
+    background: linear-gradient(90deg, rgba(31,77,143,1) 0%, rgba(255,140,28,1) 100%);*/
+    background-color: #ff8c1c;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ff8c1c;
+    color: #f2f2f2;
+    color: white;
+}
+
+.naranja-icono {
+    background: #ff8c1c !important;
+    opacity: 1 !important;
+    color: white;
+}
+
+.second-button {
+    background-color: #b0b0b0 !important;
+    opacity: 1 !important;
+    color: white;
+}
+
+.naranja-button:hover {
+    background-color: #e99a4c;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    color:white;
+}
+
+.azul-button {
+    background-color: #1f4d8f !important;
+    opacity: 1 !important;
+    color: white;
+}
+
+    .azul-button:hover {
+        color: white !important;
+    }
+
+.disabled-li {
+    pointer-events: none;
+    color: white;
+}
+
+.ServiceBP:hover {
+    background: white !important;
+    color: #000;
+    opacity: 1;
+    cursor: pointer;
+    border: 1px solid #ff8c1c;
+    box-shadow: 0 0.145rem 3.25rem #ff8c1c
+}
+
+.popularNav:hover {
+    background: #ff8c1c !important;
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.miborder {
+    border: 1px solid red !important;
+}
+
+
+.popularNav1:hover {
+    background: #1f4d8f !important;
+    color: #fff;
+    opacity: 1;
+}
+
+.form-control {
+    height: auto !important;
+}
+
+.ServicioT {
+    margin-left: 5px;
+}
+
+.ServiciosS {
+    margin: 5px;
+    width: 18rem;
+}
+
+.form-group > label {
+    font-weight:600 !important;
+    margin-bottom:8px !important; 
+}
+
+@media (max-width:480px) {
+    .ServicioT {
+        margin: 5px;
+    }
+
+    .ServiciosS {
+        margin: 5px;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        background: #ff8c1c !important;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:765px) {
+
+    #idFlag {
+        display: none !important;
+    }
+
+    #idFlag2 {
+        display: block !important;
+    }
+
+}
+

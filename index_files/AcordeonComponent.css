@@ -1,0 +1,33 @@
+﻿
+.collapsable {
+    border: 1px solid #eee;
+    padding: 10px;
+    background-color: #ffffff !important;
+    font-weight: bold;
+    color: #000 !important;
+    display: inline-block;
+    width: 100%;
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.collapsable-panel {
+    border: 1px solid #eee;
+    overflow: hidden;
+    width:100%;
+}
+
+.collapsable .title {
+    display: table-cell;
+        float:left;
+        margin-left:10px !important;
+        font-weight:bold;
+}
+
+.collapsable .value {
+    display: table-cell;
+    text-align: right;
+    float: right;
+    color: #049527;
+}

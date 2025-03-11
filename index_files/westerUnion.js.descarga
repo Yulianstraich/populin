@@ -1,0 +1,8 @@
+﻿(function () {
+    window.remesas = {
+        obtenerCiudad: function () {
+            let texto = $('#ddlCiudadWesterUnion option:selected').text();
+            return texto;
+        }
+    };
+})();

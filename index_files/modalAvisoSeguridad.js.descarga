@@ -1,0 +1,12 @@
+﻿(function () {
+    window.mostrarAvisoSeguridad = {
+
+        mostrarModal: function (id) {
+            console.log("Se ha llamado")
+            $(`#${id}`).modal('show');
+        },
+        cerrarModal: function (id) {
+            $(`#${id}`).modal('hide');
+        }
+    };
+})();

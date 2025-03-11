@@ -1,0 +1,8 @@
+﻿(function () {
+    window.recargas = {
+        obtenerDetalleRecargas: function () {
+            let texto = $('#ddlListadoRecarga option:selected').text();
+            return texto;
+        }
+    };
+})();

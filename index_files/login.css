@@ -1,0 +1,750 @@
+
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+
+#normal-signin {
+    padding: 10px;
+    font-size: 17px;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 0%;
+    border-style: none;
+    border-radius: 5px;
+    background: rgb(31,77,143);
+    background: linear-gradient(90deg, rgba(31,77,143,1) 0%, rgba(255,140,28,1) 100%);
+    border-style: solid;
+    border-width: 1px;
+    border-color: white; 
+    color: #f2f2f2;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: 0.2s;
+}
+
+    #normal-signin:hover {
+        background-color: #e99a4c;
+        border: 2px none #ff8c1c;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #FF8C1C;
+    }
+
+.pagLoading {
+    height: 110px;
+    width: 100px;
+    margin-left: 60px;
+    border-radius: 2px;
+   
+}
+/*Estilos de links en el login inicial*/
+.signup {
+    color: #ff8c1c !important;
+    font-weight: 600;
+}
+
+    .signup:hover {
+        color: #e3b17e !important;
+    }
+
+.forget {
+    color: #FFFFFF !important;
+    cursor: pointer;
+}
+
+    .forget:hover {
+        color: #ff8c1c !important;
+    }
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    text-align: center;
+    line-height: 150px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 20px rgb(247 245 245 / 0%);
+}
+
+    .loader::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #ffffff;
+    border-right: 3px solid #ffffff;
+    border-radius: 50%;
+    animation: animateC 2s linear infinite;
+}
+
+    .loader span {
+        display: block;
+        position: absolute;
+        top: calc(50% - 2px);
+        left: 50%;
+        width: 50%;
+        height: 4px;
+        background: transparent;
+        transform-origin: left;
+        animation: animate 2s linear infinite;
+    }
+
+        .loader span::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #00aeff;
+            top: -6px;
+            right: -8px;
+            box-shadow: 0 0 20px 5px #0066ff;
+        }
+
+@keyframes animateC {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(405deg);
+    }
+}
+
+
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+
+
+
+
+
+body {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 100%;
+	background: url(banner.png) no-repeat 0px 0px;
+	width: 100%;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-attachment: fixed;
+}
+
+h1,h2,h3,h4,h5,h6,input,p,a,select{
+	margin:0;
+}
+ul,label{
+	margin:0;
+	padding:0;
+}
+body a:hover,body a{
+	text-decoration:none;
+}
+/*-- main --*/
+h1.agile-head {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 3em;
+    letter-spacing: 3px;
+	text-align:center;
+}
+.container-w3l {
+    width: 62%;
+    margin: 0 auto;
+    padding: 4em;
+    text-align: center;
+}
+input[type="submit"],a{
+	transition:.5s ease-in;
+	-webkit-transition:.5s ease-in;
+	-moz-transition:.5s ease-in;
+	-o-transition:.5s ease-in;
+	-ms-transition:.5s ease-in;
+}
+.center-container {
+    padding: 0em 0 1em;
+    background:rgba(0, 0, 0, 0.42);
+}
+.w3ls-agileinfo h1{
+	text-align: center;
+    color: #fff;
+    font-size: 2.8em;
+    margin: 0em 0 1em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.image {
+    float: left;
+    width: 50%;
+	
+}
+.agileits-img{
+	background:url(../img1.png) no-repeat;
+	min-height:409px;
+	background-size:cover;
+}
+.main-head{
+	float:left;
+	width:100%;
+}
+.main-head h2 {
+    text-align: left;
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: capitalize;
+	letter-spacing:1px;
+}
+/*-- //main --*/
+/* GLOBALS */
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.form-1 .field {
+    position: relative; /* For the icon positioning */
+}
+
+.form-Registro-1 .field {
+    position: relative; /* For the icon positioning */
+}
+
+
+.form-1 .field i {
+    /* Size and position */
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 50px;
+    width: 45px;
+    /* Line */
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+    /* Styles */
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+.form-Registro-1 .field i {
+    /* Size and position */
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 49px;
+    width: 50px;
+    background: #27539f;
+    /* Line */
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+    /* Styles */
+    color: #fff;
+    text-align: center;
+    line-height: 3.5em;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.field-2 i {
+	/* Size and position */
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	height: 53px;
+	width: 50px;
+	background: #ff8c1c;
+	/* Line */
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+	/* Styles */
+	color: #fff;
+	text-align: center;
+	line-height: 3.5em;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.form-1 input[type=text], .form-1 input[type=password] {
+    font-size: 15px;
+    font-weight: 200;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    width: 100%;
+    padding: 16px 3.6em;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 3px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    background: #f9f9f9;
+    color: #777;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+
+.form-Registro-1 input[type=text], .form-1 input[type=password] {
+    font-size: 15px;
+    font-weight: 200;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    width: 100%;
+    padding: 16px 3.6em;
+    border: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1), inset 0 3px 2px rgba(0,0,0,0.1);
+    border-radius: 3px;
+    background: #f9f9f9;
+    color: #777;
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -ms-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+
+p.field {
+    margin: 2em 0;
+}
+
+
+.form-Registro-1 .field {
+    position: relative; /* For the icon positioning */
+}
+
+
+.form-1 input[type=text]:hover ~ i,
+.form-1 input[type=password]:hover ~ i {
+    color: #52cfeb;
+}
+
+.form-1 input[type=text]:focus ~ i,
+.form-1 input[type=password]:focus ~ i {
+    color: #42A2BC;
+}
+
+
+
+
+
+
+.form-Registro-1 input[type=text]:hover ~ i,
+.form-Registro-1 input[type=password]:hover ~ i {
+    color: #52cfeb;
+}
+
+.form-Registro-1 input[type=text]:focus ~ i,
+.form-Registro-1 input[type=password]:focus ~ i {
+    color: #42A2BC;
+}
+
+
+
+
+
+
+
+
+
+p.submit {
+   width: 35%;
+    float: right;
+}
+.form-1 input[type=text]:focus,
+.form-1 input[type=password]:focus,
+/*.form-1 button[type=submit]:focus {
+    outline: none;
+}*/
+
+
+.form-Registro-1 input[type=text]:focus,
+.form-Registro-1 input[type=password]:focus,
+.form-Registro-1 button[type=submit]:focus {
+    outline: none;
+}
+
+
+.form-1 {
+    width: 60%;
+    padding: 3em 3em 6.2em;
+    position: relative;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 3px 7px rgba(0, 0, 0, 0.3), inset 0 1px rgba(0, 0, 0, 0.3), inset 0 -3px 2px rgba(0,0,0,0.25);
+    background: white;
+    background: -moz-linear-gradient(#eeefef, #ffffff 10%);
+    background: -ms-linear-gradient(#eeefef, #ffffff 10%);
+    background: -o-linear-gradient(#eeefef, #ffffff 10%);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#eeefef), color-stop(0.1, #ffffff));
+    background: -webkit-linear-gradient(#eeefef, #ffffff 10%);
+    background: rgba(0, 0, 0, 0.48);
+}
+
+@media screen (min-width: 575px){
+    .form-1{
+        width: 100%;
+    }
+}
+
+
+.form-Registro-1 .field i {
+    /* Size and position */
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    height: 49px;
+    width: 50px;
+    background: #27539f;
+    /* Line */
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 0 0 rgba(255, 255, 255, 0.7);
+    /* Styles */
+    color: #fff;
+    text-align: center;
+    line-height: 3.5em;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+
+/*.form-1 button {*/
+    /* Size and position */
+    /*width: 100%;
+    height: 100%;*/
+    /* Icon styles */
+    /*font-size: 1.4em;
+    padding: 10px 0 2px;
+    color: white;*/
+
+    /* Styles */
+    /*border: none;*/ /* Remove the default border */
+    /*border-radius: inherit;
+    background: #27539f;*/ /* Fallback */
+    /*box-shadow: 
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        0 1px 2px rgba(0,0,0,0.35),
+        inset 0 3px 2px rgba(255,255,255,0.2),
+        inset 0 -3px 2px rgba(0,0,0,0.1);
+
+    cursor: pointer;
+}*/
+
+
+.form-Registro-1 button {
+    /* Size and position */
+    width: 100%;
+    height: 100%;
+    /* Icon styles */
+    font-size: 1.4em;
+    padding: 10px 0 2px;
+    color: white;
+    /* Styles */
+    border: none; /* Remove the default border */
+    border-radius: inherit;
+    background: #27539f; /* Fallback */
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.35), inset 0 3px 2px rgba(255,255,255,0.2), inset 0 -3px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+
+/*.form-1 button:hover,
+.form-1 button[type=submit]:focus {
+    background: #27539f;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}*/
+/*
+.form-1 button:active {
+    background: #27539f;
+    box-shadow: 
+        inset 0 0 5px rgba(0,0,0,0.3),
+        inset 0 3px 4px rgba(0,0,0,0.3);
+}*/
+
+.form-Registro-1 button:hover,
+.form-Registro-1 button[type=submit]:focus {
+    background: #27539f;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+
+
+.form-Registro-1 button:hover,
+.form-Registro-1 button[type=submit]:focus {
+    background: #27539f;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+   .form-Registro-1 button:active {
+    background: #27539f;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3), inset 0 3px 4px rgba(0,0,0,0.3);
+}
+
+
+.agileits_w3layouts-footer{
+	padding:0 1em 2em ;
+	text-align:center;
+}
+.agileits_w3layouts-footer p {
+    color: #fafbfd;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+h6.wthree-footer-text {
+    font-size: 1em;
+    width: 76%;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.agileits_w3layouts-footer a{
+	color:rgba(121, 167, 245, 0.98);
+}
+.agileits_w3layouts-footer a:hover{
+	color:#fff;
+	}
+  
+/* -- Responsive code -- */
+
+
+@media screen and (max-width: 1440px) {
+    .form-1 {
+        width: 60% !important;
+    }
+
+    /*.form-1 {
+		background: #eeefef;
+	}*/
+
+}
+
+@media screen and (max-width: 1366px) {
+    .form-1 {
+        width: 60% !important;
+    }
+
+    /*.form-1 {
+		background: #000000;
+    	}*/
+}
+
+
+@media screen and (max-width: 1280px) {
+    .form-1 {
+        width: 60% !important;
+    }
+
+    /*.form-1 {
+		background: #000000;
+	}*/
+
+}
+
+@media screen and (max-width: 1080px) {
+    .form-1 {
+        width: 60% !important;
+    }
+}
+
+/*.form-1{
+		padding: 1em 3em 4.5em;
+	}	
+	.agileits-img {
+		min-height: 322px;
+	}
+	}*/
+
+
+@media screen and (max-width: 1024px) {
+    .form-1 {
+        width: 60% !important;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .form-1 {
+        width: 70% !important;
+    }
+
+    /*.form-1 {
+		background: #27539f;
+	}*/
+
+    .container-w3l {
+        width: 70% !important;
+    }
+
+    .Titulo1 {
+        font-size: 30px !important;
+    }
+}
+/*
+@media screen and (max-width: 900px) {
+    .form-1 {
+        width: 70% !important;
+    }*/
+    /*prueba param localizar los elementos*/
+
+    /*.form-1 {
+		background: #000000;
+	}*/
+
+    /*padding {
+		: 1em 1em 1em;
+	}
+	.agileits-img {
+		background-position: -48px 12px;
+	}
+	h1.agile-head {
+		font-size: 2.7em;
+	}
+		*/
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .form-1 {
+        width: 70% !important;
+    }
+
+    .container-w3l {
+        width: 60% !important;
+    }
+
+    .Titulo1 {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .form-1 {
+        width: 100% !important;
+        padding: 10px;
+        /*width: 70%;*/
+    }
+
+    .container-w3l {
+        width: 90% !important;
+        padding: 10px;
+    }
+
+    .Titulo1 {
+        font-size: 10px !important;
+    }
+}
+
+
+@media screen and (max-width: 736px) {
+    .form-1 {
+        width: 100% !important;
+        /*width: 70%;*/
+    }
+
+    .container-w3l {
+        width: 90% !important
+    }
+
+    .Titulo1 {
+        font-size: 10px !important;
+    }
+}
+
+/* -- //Responsive code -- */
+
+
+
+    
